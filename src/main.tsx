@@ -1,7 +1,7 @@
 /** node modules */
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { registerSW } from 'virtual:pwa-register'
+// import { registerSW } from 'virtual:pwa-register'
 
 /** tanstack modules */
 import { TanStackDevtools } from '@tanstack/react-devtools'
@@ -36,12 +36,12 @@ root.render(
 )
 
 /** pwa initialization */
-registerSW({
-  immediate: true,
-  onNeedRefresh() {
-    console.log('New content available, refresh to update.')
-  },
-  onOfflineReady() {
-    console.log('App ready to work offline.')
-  },
-})
+// registerSW({
+//   immediate: true,
+//   onNeedRefresh() {
+//     console.log('New content available, refresh to update.')
+//   },
+//   onOfflineReady() {
+//     console.log('App ready to work offline.')
+//   },
+// })
