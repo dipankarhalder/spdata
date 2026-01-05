@@ -1,0 +1,55 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_social_login_register {
+  width: 100%;
+  margin-bottom: 20px;
+
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    & > li {
+      gap: 6px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 10px;
+      border-radius: 6px;
+      background: $black-10;
+      border: 1px solid $black-20;
+      transition: 0.5s;
+
+      & > svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      & > p {
+        color: $gray-40;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      &:nth-child(2) {
+        & > svg {
+          width: 19px;
+          height: 19px;
+        }
+      }
+
+      &:hover {
+        background: $black-40;
+        transition: 0.5s;
+      }
+    }
+  }
+}

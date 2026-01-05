@@ -1,0 +1,79 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_side_subscription {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  width: calc(100% - 20px);
+  border-radius: 8px;
+  background: $blue-100;
+  border: 1px solid $blue-20;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  gap: 8px;
+  box-shadow: $shadow-1;
+
+  .app_sub_heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    & > svg {
+      width: 18px;
+      height: 18px;
+      color: $blue-20;
+    }
+
+    & > p {
+      font-size: 14px;
+      font-weight: 500;
+      color: $blue-20;
+    }
+
+    .app_sub_close {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      cursor: pointer;
+
+      & > svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .app_sub_bodytext {
+    width: 100%;
+
+    & > p {
+      font-size: 12px;
+      font-weight: 500;
+      color: $gray-40;
+      line-height: 16px;
+    }
+  }
+
+  .app_sub_footer_btn {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+
+    span {
+      width: 100%;
+      font-size: 13px;
+      font-weight: 500;
+      color: $white-100;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-align: center;
+      background: $blue-30;
+      border: 1px solid $blue-30;
+    }
+  }
+}

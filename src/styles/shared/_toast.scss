@@ -1,0 +1,115 @@
+@use '../core/color' as *;
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.app_toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+
+  &.show {
+    animation: slideIn 0.4s ease forwards;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &.hide {
+    animation: slideOut 0.4s ease forwards;
+    pointer-events: none;
+  }
+
+  .app_toast_cover {
+    max-width: 460px;
+    background: $white-100;
+    padding: 12px 50px 14px 20px;
+    border-radius: 10px;
+    box-shadow: $shadow-1;
+
+    .app_toast_content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h5 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $gray-30;
+      }
+    }
+
+    &.success {
+      border-left: 3px solid $green-30;
+      h5 {
+        color: $green-30;
+      }
+    }
+
+    &.info {
+      border-left: 3px solid $blue-30;
+      h5 {
+        color: $blue-30;
+      }
+    }
+
+    &.error {
+      border-left: 3px solid $red-30;
+      h5 {
+        color: $red-30;
+      }
+    }
+
+    &.warning {
+      border-left: 3px solid $orange-30;
+      h5 {
+        color: $orange-30;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      border: 0px solid transparent;
+      background: transparent;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+
+      & > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_data_table_cover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background: $white-100;
+  height: calc(100vh - 51px);
+  margin-top: 0px;
+  border-radius: 20px 0 0 0;
+  box-shadow: $shadow-2;
+  overflow-y: auto;
+
+  .app_data_table_inside {
+    width: 100%;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+  }
+
+  .app_heading_info {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 15px;
+      font-weight: 500;
+
+      &>span {
+        color: $gray-30;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    .app_header_search {
+      width: 300px;
+      display: flex;
+      padding: 0 12px;
+      align-items: center;
+      border-radius: 6px;
+      background: $white-100;
+      border: 1px solid $gray-90;
+      overflow: hidden;
+      gap: 3px;
+
+      &>svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+
+      &>input {
+        width: 100%;
+        height: 34px;
+        font-weight: 500;
+        font-size: 13px;
+        color: $black-100;
+        border: 0px solid transparent;
+      }
+    }
+  }
+
+  .app_data_table_main_cover {
+    width: 100%;
+    background: $white-100;
+    border: 1px solid $gray-80;
+    border-radius: 6px;
+    overflow: auto;
+
+    table {
+      width: 100%;
+
+      thead {
+        background: $tablehead;
+
+        tr {
+          border-bottom: 1px solid $gray-80;
+
+          th {
+            padding: 0.6rem 1rem;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 500;
+            color: $gray-30;
+
+            input[type='checkbox'] {
+              margin-top: 3px;
+            }
+
+            .app_sort_header {
+              display: flex;
+              width: auto;
+              cursor: pointer;
+              align-items: center;
+              gap: 5px;
+
+              &>svg {
+                width: 14px;
+                height: 14px;
+              }
+            }
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid $gray-100;
+
+          td {
+            text-align: left;
+            padding: 0.4rem 1rem;
+            font-size: 14px;
+            font-weight: 500;
+
+            a {
+              color: $blue-30;
+              text-decoration: underline;
+            }
+
+            p>span.active-item {
+              color: $green-30;
+              padding: 3px 8px;
+              border: 1px solid $green-30;
+              font-size: 12px;
+              border-radius: 6px;
+            }
+
+            p>span.inactive-item {
+              color: $red-40;
+              padding: 3px 8px;
+              border: 1px solid $red-40;
+              font-size: 12px;
+              border-radius: 6px;
+            }
+
+            .app_table_row_btns {
+              display: flex;
+              justify-content: flex-end;
+              gap: 6px;
+
+              &>button {
+                display: flex;
+                align-items: center;
+                border: 0px solid transparent;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 4px;
+                background: $tablehead;
+                transition: 0.5s;
+
+                &.app_table_edit_btn {
+                  color: $blue-30;
+                }
+
+                &.app_table_delete_btn {
+                  color: $red-40;
+                }
+
+                &>svg {
+                  width: 14px;
+                  height: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.app_table_footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0px 20px;
+
+  .app_table_footer_left_side {
+    display: flex;
+    width: auto;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .app_table_data_count {
+    display: flex;
+
+    &>p {
+      color: $gray-30;
+      font-size: 13px;
+      font-weight: 500;
+
+      &>span {
+        color: $black-100;
+      }
+    }
+  }
+
+  .app_footer_spcl_info {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    .app_got_page {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &>p {
+        color: $gray-30;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      &>input {
+        width: 34px;
+        height: 34px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 13px;
+        color: $black-100;
+        border: 1px solid $gray-80;
+      }
+    }
+
+    .app_select_table_rec {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &>p {
+        color: $gray-30;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      &>select {
+        width: auto;
+        height: 34px;
+        padding: 0px 10px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 13px;
+        color: $black-100;
+        border: 1px solid $gray-80;
+      }
+    }
+  }
+
+  .app_footer_btn_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .app_footer_pages_counters {
+      width: auto;
+
+      &>p {
+        color: $gray-30;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    .app_pagination_btn_cover {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .app_pagination_btn {
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+        border: 1px solid $gray-80;
+        background: $white-100;
+        border-radius: 6px;
+
+        &>svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        &:disabled {
+          color: $gray-70;
+          border: 1px solid $gray-100;
+        }
+      }
+    }
+  }
+}

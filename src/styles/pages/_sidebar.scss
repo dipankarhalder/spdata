@@ -1,0 +1,278 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: $backcol;
+
+  .app_sidebar_colum_cover {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .app_sidebar_content {
+      display: flex;
+      width: 100%;
+      padding: 0px;
+      height: 100vh;
+      flex-direction: column;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .app_sidebar_logo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 14px 15px 10px;
+        align-items: center;
+        justify-content: center;
+
+        & > span {
+          display: flex;
+          width: 100%;
+          height: auto;
+          align-items: flex-start;
+
+          & > svg {
+            width: auto;
+            height: 30px;
+          }
+        }
+      }
+
+      .app_select_project {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        display: flex;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+        align-items: center;
+        background: $backcol;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+
+        & > span {
+          width: 34px;
+          height: 34px;
+          background: $blue-30;
+          background: linear-gradient(
+            90deg,
+            rgba(42, 123, 155, 1) 0%,
+            rgba(87, 199, 133, 1) 100%
+          );
+          border-radius: 6px;
+        }
+
+        .app_selected_project {
+          width: calc(100% - 50px);
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+
+          & > p {
+            color: $gray-40;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 16px;
+          }
+
+          & > h5 {
+            color: $blue-20;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .app_sidebar_main_menu {
+        width: 100%;
+        padding: 0px 15px;
+
+        & > ul {
+          width: 100%;
+          gap: 24px;
+          display: flex;
+          flex-direction: column;
+
+          & > li {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            & > p {
+              display: flex;
+              gap: 10px;
+              color: $blue-30;
+              font-size: 11px;
+              font-weight: 600;
+              text-transform: uppercase;
+
+              & > svg {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            & > ul {
+              width: 100%;
+              display: flex;
+              margin-top: 6px;
+              flex-direction: column;
+
+              & > li {
+                display: flex;
+                width: 100%;
+
+                & > a {
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  gap: 9px;
+                  padding: 7px 9px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: $black-100;
+                  border-radius: 6px;
+                  position: relative;
+
+                  & > svg {
+                    width: 20px;
+                    height: 20px;
+                  }
+
+                  & > span {
+                    top: 15px;
+                    right: 10px;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background: $red-40;
+                    border-radius: 50%;
+                    color: $white-100;
+                    text-align: center;
+                  }
+                }
+
+                &:hover a,
+                &.activeLink a {
+                  color: $blue-30;
+                  background: $white-100;
+                  box-shadow: $shadow-2;
+
+                  & > svg > path,
+                  & > svg > g > path {
+                    stroke: $blue-30;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .app_sidebar_assignee {
+        width: 100%;
+        margin-top: 20px;
+
+        & > h5 {
+          color: $blue-50;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        & > ul {
+          width: 100%;
+          gap: 12px;
+          display: flex;
+          flex-direction: column;
+
+          & > li {
+            display: flex;
+            width: 100%;
+            gap: 14px;
+
+            & > span {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app_upgrade_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px 12px;
+    position: sticky;
+    bottom: 0px;
+    background: $backcol;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.06);
+
+    & > span {
+      width: 35px;
+      height: 35px;
+      background: $gray-100;
+      border-radius: 50%;
+      overflow: hidden;
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .app_user_info {
+      width: calc(100% - 80px);
+      margin-left: 10px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+        color: $black-100;
+      }
+
+      & > p {
+        display: flex;
+        align-items: center;
+        color: $gray-60;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+      }
+    }
+
+    .app_logout_btn {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: $red-100;
+
+      & > svg {
+        width: 20px;
+        height: 20px;
+
+        & > path {
+          stroke: $red-40;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_right_side_bar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  right: 0px;
+  flex-direction: column;
+  padding: 14px 15px 10px;
+}

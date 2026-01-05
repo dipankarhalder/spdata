@@ -1,0 +1,111 @@
+@use 'sass:color';
+@use '../core/color' as *;
+
+.app_policy_info {
+  width: 100%;
+  border-top: 1px solid $black-30;
+  margin-top: 28px;
+  padding-top: 14px;
+
+  & > p {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: $gray-50;
+
+    .app_notify {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        width: 230px;
+        color: $white-100;
+        padding: 8px 12px;
+        border-radius: 6px;
+        text-align: center;
+        transform: translateX(-50%);
+        background: $gray-30;
+        display: none;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        background: $gray-50;
+        display: none;
+      }
+
+      &.app_pms:after {
+        content: 'Project Management System';
+      }
+
+      &.app_crm:after {
+        content: 'Customer Relationship Management';
+      }
+
+      &.app_erp:after {
+        content: 'Enterprise Resource Planning';
+      }
+
+      &:hover:after,
+      &:hover:before {
+        display: inline-block;
+      }
+    }
+
+    & > a {
+      gap: 5px;
+      display: flex;
+      color: $blue-40;
+      align-items: center;
+      text-decoration: underline;
+
+      & > svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  & > ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+
+    & > li {
+      width: auto;
+
+      & > a {
+        gap: 5px;
+        width: 100%;
+        display: flex;
+        font-weight: 500;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        color: $blue-40;
+        text-decoration: underline;
+
+        & > svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,976 @@
+{
+  "vendors": [
+    {
+      "id": "VND-001",
+      "name": "Apex Supplies Ltd.",
+      "contactPerson": "Rahul Sharma",
+      "email": "contact@apexsupplies.com",
+      "phone": "+1-202-555-0148",
+      "website": "https://www.apexsupplies.com",
+      "address": {
+        "street": "45 Market Street",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.6,
+      "status": "active",
+      "productsSupplied": ["Monitors", "Keyboards", "Printers"],
+      "contracts": {
+        "startDate": "2023-01-15",
+        "endDate": "2026-01-15",
+        "contractValue": 120000
+      }
+    },
+    {
+      "id": "VND-002",
+      "name": "Global Tech Traders",
+      "contactPerson": "Lisa Brown",
+      "email": "support@globaltechtraders.com",
+      "phone": "+1-415-555-0193",
+      "website": "https://www.globaltechtraders.com",
+      "address": {
+        "street": "221 Silicon Ave",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94107",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.8,
+      "status": "active",
+      "productsSupplied": [
+        "Software Licenses",
+        "Technical Support",
+        "Cloud Services"
+      ],
+      "contracts": {
+        "startDate": "2022-08-01",
+        "endDate": "2025-08-01",
+        "contractValue": 300000
+      }
+    },
+    {
+      "id": "VND-003",
+      "name": "Prime Logistics Co.",
+      "contactPerson": "John Wilson",
+      "email": "admin@primelogistics.co",
+      "phone": "+1-312-555-0175",
+      "website": "https://www.primelogistics.co",
+      "address": {
+        "street": "78 Harbor Road",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60601",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.3,
+      "status": "inactive",
+      "productsSupplied": ["Warehouse Storage", "Freight Delivery"],
+      "contracts": {
+        "startDate": "2021-05-01",
+        "endDate": "2024-05-01",
+        "contractValue": 175000
+      }
+    },
+    {
+      "id": "VND-004",
+      "name": "BlueWave Electronics",
+      "contactPerson": "Emily Carter",
+      "email": "sales@bluewaveelec.com",
+      "phone": "+1-210-555-0192",
+      "website": "https://www.bluewaveelec.com",
+      "address": {
+        "street": "19 Ocean Drive",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33101",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.5,
+      "status": "active",
+      "productsSupplied": ["Cables", "Adapters", "Batteries"],
+      "contracts": {
+        "startDate": "2023-03-10",
+        "endDate": "2026-03-10",
+        "contractValue": 98000
+      }
+    },
+    {
+      "id": "VND-005",
+      "name": "Skyline IT Partners",
+      "contactPerson": "Michael Davis",
+      "email": "info@skylineitpartners.com",
+      "phone": "+1-646-555-0123",
+      "website": "https://www.skylineitpartners.com",
+      "address": {
+        "street": "88 Madison Road",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10010",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.7,
+      "status": "active",
+      "productsSupplied": [
+        "Network Setup",
+        "Cybersecurity",
+        "Software Licenses"
+      ],
+      "contracts": {
+        "startDate": "2022-11-15",
+        "endDate": "2025-11-15",
+        "contractValue": 240000
+      }
+    },
+    {
+      "id": "VND-006",
+      "name": "Rapid Freight Corp",
+      "contactPerson": "David Thompson",
+      "email": "contact@rapidfreightcorp.com",
+      "phone": "+1-303-555-0187",
+      "website": "https://www.rapidfreightcorp.com",
+      "address": {
+        "street": "500 Cargo Lane",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.2,
+      "status": "active",
+      "productsSupplied": ["Freight Delivery", "Logistics Consulting"],
+      "contracts": {
+        "startDate": "2021-12-01",
+        "endDate": "2024-12-01",
+        "contractValue": 190000
+      }
+    },
+    {
+      "id": "VND-007",
+      "name": "TechNova Solutions",
+      "contactPerson": "Hannah Lee",
+      "email": "hello@technovasolutions.com",
+      "phone": "+1-818-555-0114",
+      "website": "https://www.technovasolutions.com",
+      "address": {
+        "street": "12 Innovation Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90012",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.9,
+      "status": "active",
+      "productsSupplied": ["Cloud Hosting", "Managed IT Support"],
+      "contracts": {
+        "startDate": "2023-02-20",
+        "endDate": "2026-02-20",
+        "contractValue": 310000
+      }
+    },
+    {
+      "id": "VND-008",
+      "name": "Metro Office Essentials",
+      "contactPerson": "Peter Collins",
+      "email": "orders@metrooffice.com",
+      "phone": "+1-347-555-0138",
+      "website": "https://www.metrooffice.com",
+      "address": {
+        "street": "134 Station Road",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": "11201",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.4,
+      "status": "active",
+      "productsSupplied": ["Paper", "Ink Cartridges", "Office Chairs"],
+      "contracts": {
+        "startDate": "2022-04-01",
+        "endDate": "2025-04-01",
+        "contractValue": 76000
+      }
+    },
+    {
+      "id": "VND-009",
+      "name": "NorthStar Logistics",
+      "contactPerson": "Henry Brooks",
+      "email": "support@northstarlogi.com",
+      "phone": "+1-208-555-0179",
+      "website": "https://www.northstarlogi.com",
+      "address": {
+        "street": "900 Freight Way",
+        "city": "Boise",
+        "state": "ID",
+        "zip": "83701",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.1,
+      "status": "inactive",
+      "productsSupplied": ["Cold Storage", "Long Haul Delivery"],
+      "contracts": {
+        "startDate": "2020-06-01",
+        "endDate": "2023-06-01",
+        "contractValue": 145000
+      }
+    },
+    {
+      "id": "VND-010",
+      "name": "SecureTech Cyber Systems",
+      "contactPerson": "Sophia Martinez",
+      "email": "security@securetechcs.com",
+      "phone": "+1-520-555-0144",
+      "website": "https://www.securetechcs.com",
+      "address": {
+        "street": "409 Network Lane",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85701",
+        "country": "USA"
+      },
+      "category": "Cybersecurity",
+      "rating": 4.9,
+      "status": "active",
+      "productsSupplied": ["Firewalls", "Security Audits", "Threat Monitoring"],
+      "contracts": {
+        "startDate": "2023-07-01",
+        "endDate": "2026-07-01",
+        "contractValue": 420000
+      }
+    },
+    {
+      "id": "VND-011",
+      "name": "EverBright Lighting",
+      "contactPerson": "Kelly Rogers",
+      "email": "service@everbrightlight.com",
+      "phone": "+1-702-555-0182",
+      "website": "https://www.everbrightlight.com",
+      "address": {
+        "street": "22 Bright Ave",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zip": "88901",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.6,
+      "status": "active",
+      "productsSupplied": ["LED Lamps", "Flood Lights"],
+      "contracts": {
+        "startDate": "2021-09-01",
+        "endDate": "2024-09-01",
+        "contractValue": 87000
+      }
+    },
+    {
+      "id": "VND-012",
+      "name": "PaperPro Stationery",
+      "contactPerson": "Daniel White",
+      "email": "hello@paperprostationery.com",
+      "phone": "+1-617-555-0117",
+      "website": "https://www.paperprostationery.com",
+      "address": {
+        "street": "400 Beacon Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02108",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.3,
+      "status": "active",
+      "productsSupplied": ["Notebooks", "Folders", "Pens"],
+      "contracts": {
+        "startDate": "2022-02-15",
+        "endDate": "2025-02-15",
+        "contractValue": 65000
+      }
+    },
+    {
+      "id": "VND-013",
+      "name": "Atlas Tech Hardware",
+      "contactPerson": "Marcus Allen",
+      "email": "sales@atlastechhardware.com",
+      "phone": "+1-205-555-0105",
+      "website": "https://www.atlastechhardware.com",
+      "address": {
+        "street": "500 Industrial Road",
+        "city": "Birmingham",
+        "state": "AL",
+        "zip": "35203",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.2,
+      "status": "inactive",
+      "productsSupplied": ["Microchips", "PCBs"],
+      "contracts": {
+        "startDate": "2020-03-01",
+        "endDate": "2023-03-01",
+        "contractValue": 99000
+      }
+    },
+    {
+      "id": "VND-014",
+      "name": "CloudMatrix IT Hub",
+      "contactPerson": "Olivia Johnson",
+      "email": "contact@cloudmatrixhub.com",
+      "phone": "+1-503-555-0177",
+      "website": "https://www.cloudmatrixhub.com",
+      "address": {
+        "street": "100 Data Drive",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97035",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.8,
+      "status": "active",
+      "productsSupplied": ["Cloud Integration", "Backup Services"],
+      "contracts": {
+        "startDate": "2023-04-01",
+        "endDate": "2026-04-01",
+        "contractValue": 275000
+      }
+    },
+    {
+      "id": "VND-015",
+      "name": "Precision Movers Inc.",
+      "contactPerson": "Jason Patel",
+      "email": "info@precisionmoversinc.com",
+      "phone": "+1-816-555-0142",
+      "website": "https://www.precisionmoversinc.com",
+      "address": {
+        "street": "211 Cargo Park",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64101",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.0,
+      "status": "inactive",
+      "productsSupplied": ["Freight Delivery", "Warehouse Management"],
+      "contracts": {
+        "startDate": "2019-06-01",
+        "endDate": "2022-06-01",
+        "contractValue": 132000
+      }
+    },
+    {
+      "id": "VND-016",
+      "name": "GreenWorks Supplies",
+      "contactPerson": "Alicia Green",
+      "email": "service@greenworkssupplies.com",
+      "phone": "+1-414-555-0119",
+      "website": "https://www.greenworkssupplies.com",
+      "address": {
+        "street": "8 Eco Street",
+        "city": "Milwaukee",
+        "state": "WI",
+        "zip": "53202",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.7,
+      "status": "active",
+      "productsSupplied": ["Eco-Friendly Paper", "Recycled Ink Cartridges"],
+      "contracts": {
+        "startDate": "2023-01-01",
+        "endDate": "2026-01-01",
+        "contractValue": 82000
+      }
+    },
+    {
+      "id": "VND-017",
+      "name": "Horizon Data Solutions",
+      "contactPerson": "Eric Young",
+      "email": "support@horizondatasolutions.com",
+      "phone": "+1-303-555-0198",
+      "website": "https://www.horizondatasolutions.com",
+      "address": {
+        "street": "77 Cyber Road",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80203",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.9,
+      "status": "active",
+      "productsSupplied": ["Cloud Computing", "IT Consulting"],
+      "contracts": {
+        "startDate": "2022-10-01",
+        "endDate": "2025-10-01",
+        "contractValue": 350000
+      }
+    },
+    {
+      "id": "VND-018",
+      "name": "LogiPro Transport",
+      "contactPerson": "Sarah Mitchell",
+      "email": "contact@logiprotransport.com",
+      "phone": "+1-614-555-0183",
+      "website": "https://www.logiprotransport.com",
+      "address": {
+        "street": "300 Distribution Blvd",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43004",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.1,
+      "status": "active",
+      "productsSupplied": ["Distribution", "Freight Coordination"],
+      "contracts": {
+        "startDate": "2023-05-01",
+        "endDate": "2026-05-01",
+        "contractValue": 210000
+      }
+    },
+    {
+      "id": "VND-019",
+      "name": "TechEdge Global",
+      "contactPerson": "Laura Parker",
+      "email": "info@techedgeglobal.com",
+      "phone": "+1-720-555-0174",
+      "website": "https://www.techedgeglobal.com",
+      "address": {
+        "street": "890 Tech Lane",
+        "city": "Boulder",
+        "state": "CO",
+        "zip": "80301",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.5,
+      "status": "active",
+      "productsSupplied": ["Processors", "Memory Units"],
+      "contracts": {
+        "startDate": "2021-09-15",
+        "endDate": "2024-09-15",
+        "contractValue": 190000
+      }
+    },
+    {
+      "id": "VND-020",
+      "name": "OfficeHub Direct",
+      "contactPerson": "Nathan Scott",
+      "email": "orders@officehubdirect.com",
+      "phone": "+1-502-555-0128",
+      "website": "https://www.officehubdirect.com",
+      "address": {
+        "street": "221 Business Plaza",
+        "city": "Louisville",
+        "state": "KY",
+        "zip": "40202",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.4,
+      "status": "active",
+      "productsSupplied": ["Desks", "Binders", "Office Accessories"],
+      "contracts": {
+        "startDate": "2022-07-20",
+        "endDate": "2025-07-20",
+        "contractValue": 73000
+      }
+    },
+    {
+      "id": "VND-021",
+      "name": "Streamline Logistics",
+      "contactPerson": "Carlos Rivera",
+      "email": "info@streamlinelogistics.com",
+      "phone": "+1-702-555-0104",
+      "website": "https://www.streamlinelogistics.com",
+      "address": {
+        "street": "55 Mobility Way",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zip": "88905",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.3,
+      "status": "active",
+      "productsSupplied": ["Freight Delivery", "Cargo Management"],
+      "contracts": {
+        "startDate": "2023-04-10",
+        "endDate": "2026-04-10",
+        "contractValue": 185000
+      }
+    },
+    {
+      "id": "VND-022",
+      "name": "NextGen IT Labs",
+      "contactPerson": "Fiona Carter",
+      "email": "support@nextgenitlabs.com",
+      "phone": "+1-818-555-0156",
+      "website": "https://www.nextgenitlabs.com",
+      "address": {
+        "street": "92 Data Court",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90017",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.8,
+      "status": "active",
+      "productsSupplied": [
+        "Server Maintenance",
+        "IT Consulting",
+        "Cloud Setup"
+      ],
+      "contracts": {
+        "startDate": "2022-12-01",
+        "endDate": "2025-12-01",
+        "contractValue": 295000
+      }
+    },
+    {
+      "id": "VND-023",
+      "name": "BrightEdge Electronics",
+      "contactPerson": "Samuel King",
+      "email": "service@brightedgeelec.com",
+      "phone": "+1-512-555-0191",
+      "website": "https://www.brightedgeelec.com",
+      "address": {
+        "street": "120 Tech Avenue",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.5,
+      "status": "active",
+      "productsSupplied": ["Power Supplies", "Circuit Boards"],
+      "contracts": {
+        "startDate": "2021-10-15",
+        "endDate": "2024-10-15",
+        "contractValue": 160000
+      }
+    },
+    {
+      "id": "VND-024",
+      "name": "OfficeMax Pro Services",
+      "contactPerson": "Tina Morgan",
+      "email": "orders@officemaxpro.com",
+      "phone": "+1-410-555-0172",
+      "website": "https://www.officemaxpro.com",
+      "address": {
+        "street": "301 Corporate Blvd",
+        "city": "Baltimore",
+        "state": "MD",
+        "zip": "21201",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.2,
+      "status": "active",
+      "productsSupplied": ["Office Desks", "Stationery Packs"],
+      "contracts": {
+        "startDate": "2022-06-01",
+        "endDate": "2025-06-01",
+        "contractValue": 71000
+      }
+    },
+    {
+      "id": "VND-025",
+      "name": "AlphaTech Networks",
+      "contactPerson": "Bruce Matthews",
+      "email": "hello@alphatechnetworks.com",
+      "phone": "+1-602-555-0165",
+      "website": "https://www.alphatechnetworks.com",
+      "address": {
+        "street": "500 Network Parkway",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85001",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.9,
+      "status": "active",
+      "productsSupplied": ["Network Infrastructure", "Security Systems"],
+      "contracts": {
+        "startDate": "2023-01-20",
+        "endDate": "2026-01-20",
+        "contractValue": 325000
+      }
+    },
+    {
+      "id": "VND-026",
+      "name": "CargoPoint Express",
+      "contactPerson": "Ethan Daniels",
+      "email": "contact@cargopointexpress.com",
+      "phone": "+1-918-555-0133",
+      "website": "https://www.cargopointexpress.com",
+      "address": {
+        "street": "800 Cargo Circle",
+        "city": "Tulsa",
+        "state": "OK",
+        "zip": "74101",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.0,
+      "status": "inactive",
+      "productsSupplied": ["Freight Handling", "Package Delivery"],
+      "contracts": {
+        "startDate": "2020-07-01",
+        "endDate": "2023-07-01",
+        "contractValue": 120000
+      }
+    },
+    {
+      "id": "VND-027",
+      "name": "Quantum Data Tech",
+      "contactPerson": "Sabrina Hayes",
+      "email": "support@quantumdatatech.com",
+      "phone": "+1-512-555-0153",
+      "website": "https://www.quantumdatatech.com",
+      "address": {
+        "street": "77 Innovation Loop",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73302",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.6,
+      "status": "active",
+      "productsSupplied": ["Cloud Hosting", "Data Backup Solutions"],
+      "contracts": {
+        "startDate": "2021-09-01",
+        "endDate": "2024-09-01",
+        "contractValue": 260000
+      }
+    },
+    {
+      "id": "VND-028",
+      "name": "EcoPrint Supplies",
+      "contactPerson": "Jonathan Drake",
+      "email": "sales@ecoprintsupplies.com",
+      "phone": "+1-414-555-0189",
+      "website": "https://www.ecoprintsupplies.com",
+      "address": {
+        "street": "1200 Commerce St",
+        "city": "Milwaukee",
+        "state": "WI",
+        "zip": "53201",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.3,
+      "status": "active",
+      "productsSupplied": ["Printer Paper", "Ink Refills"],
+      "contracts": {
+        "startDate": "2023-03-01",
+        "endDate": "2026-03-01",
+        "contractValue": 58000
+      }
+    },
+    {
+      "id": "VND-029",
+      "name": "Titan Hardware Corp.",
+      "contactPerson": "Robert Jenkins",
+      "email": "contact@titanhardwarecorp.com",
+      "phone": "+1-775-555-0140",
+      "website": "https://www.titanhardwarecorp.com",
+      "address": {
+        "street": "88 Industrial Park",
+        "city": "Reno",
+        "state": "NV",
+        "zip": "89501",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.1,
+      "status": "inactive",
+      "productsSupplied": ["Wiring Units", "Electrical Boards"],
+      "contracts": {
+        "startDate": "2020-05-10",
+        "endDate": "2023-05-10",
+        "contractValue": 95000
+      }
+    },
+    {
+      "id": "VND-030",
+      "name": "PrimeWave IT Consulting",
+      "contactPerson": "Isabella Torres",
+      "email": "info@primewaveit.com",
+      "phone": "+1-925-555-0124",
+      "website": "https://www.primewaveit.com",
+      "address": {
+        "street": "2900 Skyline Blvd",
+        "city": "Oakland",
+        "state": "CA",
+        "zip": "94601",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.8,
+      "status": "active",
+      "productsSupplied": ["IT Strategy", "Network Protection"],
+      "contracts": {
+        "startDate": "2023-08-01",
+        "endDate": "2026-08-01",
+        "contractValue": 340000
+      }
+    },
+    {
+      "id": "VND-031",
+      "name": "SkyTech Electronics",
+      "contactPerson": "Wendy Howard",
+      "email": "service@skytechelec.com",
+      "phone": "+1-319-555-0177",
+      "website": "https://www.skytechelec.com",
+      "address": {
+        "street": "101 Sky Road",
+        "city": "Cedar Rapids",
+        "state": "IA",
+        "zip": "52401",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.4,
+      "status": "active",
+      "productsSupplied": ["Screens", "LED Panels"],
+      "contracts": {
+        "startDate": "2021-04-01",
+        "endDate": "2024-04-01",
+        "contractValue": 148000
+      }
+    },
+    {
+      "id": "VND-032",
+      "name": "United Office Depot",
+      "contactPerson": "Paul Henderson",
+      "email": "orders@unitedofficedepot.com",
+      "phone": "+1-225-555-0112",
+      "website": "https://www.unitedofficedepot.com",
+      "address": {
+        "street": "88 Commerce Ave",
+        "city": "Baton Rouge",
+        "state": "LA",
+        "zip": "70801",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.2,
+      "status": "active",
+      "productsSupplied": ["Binders", "Storage Boxes"],
+      "contracts": {
+        "startDate": "2022-01-10",
+        "endDate": "2025-01-10",
+        "contractValue": 67000
+      }
+    },
+    {
+      "id": "VND-033",
+      "name": "Velocity Transport Co.",
+      "contactPerson": "Derek Wallace",
+      "email": "support@velocitytransportco.com",
+      "phone": "+1-907-555-0139",
+      "website": "https://www.velocitytransportco.com",
+      "address": {
+        "street": "55 Glacier Road",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": "99501",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.0,
+      "status": "inactive",
+      "productsSupplied": ["Cold Supply Delivery", "Heavy Cargo Transport"],
+      "contracts": {
+        "startDate": "2019-03-01",
+        "endDate": "2022-03-01",
+        "contractValue": 160000
+      }
+    },
+    {
+      "id": "VND-034",
+      "name": "OptiCore IT Systems",
+      "contactPerson": "Megan Lawrence",
+      "email": "hello@opticoreitsystems.com",
+      "phone": "+1-617-555-0190",
+      "website": "https://www.opticoreitsystems.com",
+      "address": {
+        "street": "600 Digital Way",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02110",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.7,
+      "status": "active",
+      "productsSupplied": ["Server Hosting", "Security Operations"],
+      "contracts": {
+        "startDate": "2023-04-15",
+        "endDate": "2026-04-15",
+        "contractValue": 380000
+      }
+    },
+    {
+      "id": "VND-035",
+      "name": "BrightDesk Office Co.",
+      "contactPerson": "Holly Bennett",
+      "email": "sales@brightdeskoffice.com",
+      "phone": "+1-404-555-0129",
+      "website": "https://www.brightdeskoffice.com",
+      "address": {
+        "street": "99 Workspace Road",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30301",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.5,
+      "status": "active",
+      "productsSupplied": ["Office Tables", "File Cabinets"],
+      "contracts": {
+        "startDate": "2022-09-01",
+        "endDate": "2025-09-01",
+        "contractValue": 74000
+      }
+    },
+    {
+      "id": "VND-036",
+      "name": "ElectricOne Components",
+      "contactPerson": "Gregory Mills",
+      "email": "info@electriconecomponents.com",
+      "phone": "+1-708-555-0107",
+      "website": "https://www.electriconecomponents.com",
+      "address": {
+        "street": "60 Circuit Lane",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60602",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.3,
+      "status": "active",
+      "productsSupplied": ["Microcontrollers", "LED Modules"],
+      "contracts": {
+        "startDate": "2021-02-01",
+        "endDate": "2024-02-01",
+        "contractValue": 143000
+      }
+    },
+    {
+      "id": "VND-037",
+      "name": "TransGlobe Freight",
+      "contactPerson": "Nancy Rhodes",
+      "email": "support@transglobefreight.com",
+      "phone": "+1-213-555-0186",
+      "website": "https://www.transglobefreight.com",
+      "address": {
+        "street": "100 Harbor Plaza",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90021",
+        "country": "USA"
+      },
+      "category": "Logistics",
+      "rating": 4.2,
+      "status": "active",
+      "productsSupplied": ["International Shipping", "Customs Handling"],
+      "contracts": {
+        "startDate": "2023-05-01",
+        "endDate": "2026-05-01",
+        "contractValue": 250000
+      }
+    },
+    {
+      "id": "VND-038",
+      "name": "CloudSphere Data",
+      "contactPerson": "Rachel Evans",
+      "email": "info@cloudspheredata.com",
+      "phone": "+1-919-555-0122",
+      "website": "https://www.cloudspheredata.com",
+      "address": {
+        "street": "500 Data Plaza",
+        "city": "Raleigh",
+        "state": "NC",
+        "zip": "27601",
+        "country": "USA"
+      },
+      "category": "IT Services",
+      "rating": 4.9,
+      "status": "active",
+      "productsSupplied": ["Cloud Storage", "AI Analytics"],
+      "contracts": {
+        "startDate": "2022-08-15",
+        "endDate": "2025-08-15",
+        "contractValue": 410000
+      }
+    },
+    {
+      "id": "VND-039",
+      "name": "PaperLogic Supplies",
+      "contactPerson": "Olivia Foster",
+      "email": "sales@paperlogicsupplies.com",
+      "phone": "+1-423-555-0184",
+      "website": "https://www.paperlogicsupplies.com",
+      "address": {
+        "street": "77 Office Row",
+        "city": "Chattanooga",
+        "state": "TN",
+        "zip": "37401",
+        "country": "USA"
+      },
+      "category": "Office Supplies",
+      "rating": 4.4,
+      "status": "active",
+      "productsSupplied": ["Printer Paper", "Envelopes"],
+      "contracts": {
+        "startDate": "2021-06-20",
+        "endDate": "2024-06-20",
+        "contractValue": 59000
+      }
+    },
+    {
+      "id": "VND-040",
+      "name": "ElectroCore Systems",
+      "contactPerson": "Thomas Reed",
+      "email": "hello@electrocoresystems.com",
+      "phone": "+1-206-555-0197",
+      "website": "https://www.electrocoresystems.com",
+      "address": {
+        "street": "240 Electric Ave",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "USA"
+      },
+      "category": "Electronics",
+      "rating": 4.7,
+      "status": "active",
+      "productsSupplied": ["Power Modules", "Voltage Converters"],
+      "contracts": {
+        "startDate": "2023-02-15",
+        "endDate": "2026-02-15",
+        "contractValue": 220000
+      }
+    }
+  ]
+}

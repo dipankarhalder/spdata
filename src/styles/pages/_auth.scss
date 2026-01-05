@@ -1,0 +1,380 @@
+@use '../core/color' as *;
+
+.app_auth_wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  .app_auth_wrapper_sidebar {
+    display: flex;
+    height: 100vh;
+    width: 40%;
+    position: relative;
+
+    .app_auth_logo {
+      width: 140px;
+      height: auto;
+      margin-bottom: 16px;
+
+      & > span {
+        width: 100%;
+
+        & > svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .app_auth_form_cover {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+
+      .app_auth_form_inside {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 32px 40px 36px;
+        border-radius: 10px;
+        position: absolute;
+        top: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 50px;
+
+        .app_auth_inside_cover {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+            font-family: $font;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: $gray-20;
+          }
+
+          & > p {
+            color: $gray-60;
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 30px;
+          }
+
+          .app_auth_form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            form {
+              gap: 10px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+
+              .app_form_input_row {
+                display: flex;
+                gap: 10px;
+              }
+
+              .app_auth_input_extra {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                & > em,
+                & > p {
+                  font-style: normal;
+                  color: $bodytext;
+                  width: 100%;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 18px;
+                }
+
+                & > em {
+                  margin-bottom: 2px;
+                }
+
+                & > p {
+                  color: $black-100;
+                  display: flex;
+                  font-size: 15px;
+                  margin-bottom: 20px;
+                  align-items: center;
+                  gap: 4px;
+
+                  & > img {
+                    width: 20px;
+                  }
+
+                  & > span {
+                    color: $gray-60;
+                    font-size: 12px;
+                    margin-left: 16px;
+                  }
+                }
+              }
+
+              .app_form_input {
+                gap: 2px;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                  color: $gray-50;
+                  width: 100%;
+                  font-size: 14px;
+                  font-weight: 500;
+
+                  & > span {
+                    color: $orange-40;
+                    font-size: 16px;
+                  }
+                }
+
+                & > input {
+                  width: 100%;
+                  height: 44px;
+                  padding: 0 16px;
+                  border-radius: 6px;
+                  font-weight: 500;
+                  font-size: 15px;
+                  color: $black-100;
+                  border: 1px solid $black-50;
+
+                  &[disabled] {
+                    color: $gray-50 !important;
+                    background: $gray-100;
+                    cursor: not-allowed;
+                  }
+                }
+
+                & > p {
+                  text-align: left;
+                  font-family: $font;
+                  font-weight: 500;
+                  font-size: 12px;
+                  margin-top: 4px;
+                  color: $gray-50;
+                  margin-bottom: 0px;
+                  line-height: normal;
+                }
+
+                & > em {
+                  font-style: normal;
+                  text-align: left;
+                  font-family: $font;
+                  font-weight: 500;
+                  font-size: 12px;
+                  margin-top: 2px;
+                  color: $red-50;
+                  margin-bottom: 0px;
+                  line-height: normal;
+                }
+
+                .app_sugg_username_list {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  margin-top: 18px;
+                  margin-bottom: 10px;
+
+                  & > p {
+                    text-align: left;
+                    font-family: $font;
+                    font-weight: 500;
+                    font-size: 12px;
+                    margin-top: 4px;
+                    color: $gray-30;
+                    margin-bottom: 6px;
+                    line-height: normal;
+                  }
+
+                  & > ul {
+                    gap: 6px;
+                    display: flex;
+                    width: 100%;
+
+                    & > li {
+                      color: $green-30;
+                      font-size: 12px;
+                      padding-right: 16px;
+                      font-weight: 500;
+                      border-radius: 40px;
+                      text-decoration: underline;
+                    }
+                  }
+                }
+
+                .app_password_validation {
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  margin: 6px 0px 8px;
+
+                  & > p {
+                    width: 50%;
+                    display: flex;
+                    text-align: left;
+                    font-family: $font;
+                    font-weight: 500;
+                    font-size: 11px;
+                    margin-top: 3px;
+                    align-items: center;
+                    color: $gray-30;
+                    margin-bottom: 0px;
+                    line-height: normal;
+
+                    & > svg {
+                      width: 14px;
+                      height: 14px;
+                      margin-right: 4px;
+                    }
+                  }
+                }
+              }
+
+              .app_forgot_link {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 0px;
+
+                & > a {
+                  color: $blue-30;
+                  font-family: $font;
+                  font-weight: 500;
+                  font-size: 14px;
+                  text-decoration: underline;
+                }
+              }
+
+              .app_form_btn {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 8px;
+
+                & > span,
+                button {
+                  height: 44px;
+                  width: 100%;
+                  padding: 0 30px;
+                  background: $blue-30;
+                  color: $white-100;
+                  font-weight: 500;
+                  font-size: 15px;
+                  border-radius: 6px;
+                  border: 0px solid transparent;
+                  margin-top: 10px;
+                  cursor: pointer;
+                  transition: 0.5s;
+
+                  &:hover {
+                    background: $blue-20;
+                    transition: 0.5s;
+                  }
+                }
+
+                & > span {
+                  text-align: center;
+                  line-height: 44px;
+                }
+              }
+
+              .app_or_text {
+                width: 100%;
+                margin-top: 10px;
+
+                & > p {
+                  color: $gray-40;
+                  width: 100%;
+                  text-align: left;
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+              }
+
+              .app_register_link {
+                display: flex;
+                justify-content: center;
+
+                & > p {
+                  font-family: $font;
+                  font-weight: 500;
+                  font-size: 14px;
+                  margin-bottom: 0px;
+                  line-height: 22px;
+
+                  & > a {
+                    color: $blue-30;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+
+            .app_acknowledge {
+              width: 100%;
+              display: flex;
+              border-top: 1px solid $gray-20;
+              margin-top: 10px;
+              padding-top: 18px;
+
+              & > p {
+                width: 100%;
+                position: relative;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 12px;
+                margin-bottom: 0px;
+                color: $gray-30;
+
+                & > a {
+                  display: inline-block;
+                  color: $blue-30;
+                  align-items: center;
+                  text-decoration: underline;
+
+                  & > svg {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .app_background_content {
+      z-index: -1;
+      background-color: $white-100;
+      position: absolute;
+      inset: 0%;
+      opacity: 1;
+    }
+  }
+
+  .app_log_auth_bg {
+    background-image: url('/logbg.jpg');
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e0dfe7;
+    height: 100vh;
+    width: 60%;
+  }
+}
