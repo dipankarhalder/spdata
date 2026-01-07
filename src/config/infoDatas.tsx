@@ -57,6 +57,21 @@ export const getMainMenus = () => {
       ],
     },
     {
+      id: 5,
+      label: 'Manage Internals',
+      children: [
+        {
+          id: 2,
+          icon: <Companies />,
+          label: 'Company',
+          path: `/${isUsername}/${paths.company}`,
+        },
+        { id: 1, icon: <Phone />, label: 'Contact', path: '/' },
+        { id: 3, icon: <Deals />, label: 'Deals', path: '/' },
+        { id: 4, icon: <Activity />, label: 'Activities', path: '/' },
+      ],
+    },
+    {
       id: 2,
       label: 'Projects',
       children: [
@@ -79,15 +94,22 @@ export const getMainMenus = () => {
       label: 'Products',
       children: [
         { id: 1, icon: <Products />, label: 'Products', path: '/' },
-        { id: 2, icon: <Tracking />, label: 'Trackings', path: '/' },
-        { id: 3, icon: <Rreturn />, label: 'Returns', path: '/', count: 12 },
-        { id: 4, icon: <Billings />, label: 'Billings', path: '/' },
+        // { id: 4, icon: <Billings />, label: 'Billings', path: '/' },
         {
           id: 5,
           icon: <Vendors />,
           label: 'Vendors',
           path: `/${isUsername}/${paths.vendors}`,
         },
+        {
+          id: 4,
+          icon: <Vendors />,
+          label: 'Suppliers',
+          path: `/${isUsername}/${paths.vendors}`,
+        },
+        { id: 2, icon: <Tracking />, label: 'Trackings', path: '/' },
+        { id: 3, icon: <Rreturn />, label: 'Returns', path: '/' },
+        { id: 6, icon: <Products />, label: 'Status', path: '/' },
       ],
     },
     {
@@ -120,16 +142,6 @@ export const getMainMenus = () => {
           path: `/${isUsername}/${paths.attendances}`,
         },
         { id: 4, icon: <Reports />, label: 'Reports', path: '/' },
-      ],
-    },
-    {
-      id: 5,
-      label: 'Manage Customers',
-      children: [
-        { id: 1, icon: <Phone />, label: 'Contact', path: '/' },
-        { id: 2, icon: <Companies />, label: 'Companies', path: '/' },
-        { id: 3, icon: <Deals />, label: 'Deals', path: '/' },
-        { id: 4, icon: <Activity />, label: 'Activities', path: '/' },
       ],
     },
     {

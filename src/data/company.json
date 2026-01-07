@@ -1,0 +1,102 @@
+{
+  "companies": [
+    {
+      "id": "MFG-001",
+      "name": "Precision Motors Pvt. Ltd.",
+      "address": {
+        "street": "15 Industrial Estate, Phase 3",
+        "city": "Faridabad",
+        "state": "Haryana",
+        "postal_code": "121001"
+      },
+      "website": "https://www.precisionmotors.in",
+      "industry": "Automobile Manufacturing",
+      "contact_number": "(129) 555-8765",
+      "email": "contact@precisionmotors.in"
+    },
+    {
+      "id": "MFG-002",
+      "name": "SteelTech Industries",
+      "address": {
+        "street": "45 Metal Works Lane, Unit 7",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "postal_code": "400018"
+      },
+      "website": "https://www.steeltechindustries.in",
+      "industry": "Steel & Metal Manufacturing",
+      "contact_number": "(22) 555-1234",
+      "email": "info@steeltechindustries.in"
+    },
+    {
+      "id": "MFG-003",
+      "name": "Vibrant Plastics Ltd.",
+      "address": {
+        "street": "123 Plastic Park, Sector 5",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "postal_code": "560076"
+      },
+      "website": "https://www.vibrantplastics.in",
+      "industry": "Plastic Manufacturing",
+      "contact_number": "(80) 555-9876",
+      "email": "sales@vibrantplastics.in"
+    },
+    {
+      "id": "MFG-004",
+      "name": "Elite Electronics Ltd.",
+      "address": {
+        "street": "82 Electronics Hub, B Block, MIDC",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "postal_code": "411039"
+      },
+      "website": "https://www.eliteelectronics.in",
+      "industry": "Electronics Manufacturing",
+      "contact_number": "(20) 555-2345",
+      "email": "support@eliteelectronics.in"
+    },
+    {
+      "id": "MFG-005",
+      "name": "Green Energy Equipment Co.",
+      "address": {
+        "street": "34 Renewable Street, Plot 9",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "postal_code": "380015"
+      },
+      "website": "https://www.greenenergyequip.in",
+      "industry": "Renewable Energy Manufacturing",
+      "contact_number": "(79) 555-5678",
+      "email": "contact@greenenergyequip.in"
+    },
+    {
+      "id": "MFG-006",
+      "name": "Textile Masters Pvt. Ltd.",
+      "address": {
+        "street": "8 Fabric Lane, Industrial Area",
+        "city": "Surat",
+        "state": "Gujarat",
+        "postal_code": "395001"
+      },
+      "website": "https://www.textilemasters.in",
+      "industry": "Textile Manufacturing",
+      "contact_number": "(261) 555-8901",
+      "email": "info@textilemasters.in"
+    },
+    {
+      "id": "MFG-007",
+      "name": "Advanced Packaging Solutions",
+      "address": {
+        "street": "50 Pack House Road, Plot 15",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "postal_code": "600100"
+      },
+      "website": "https://www.advancedpackaging.in",
+      "industry": "Packaging Manufacturing",
+      "contact_number": "(44) 555-5432",
+      "email": "sales@advancedpackaging.in"
+    }
+  ]
+}

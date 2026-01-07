@@ -1,25 +1,25 @@
 /** node modules */
-import { Outlet, Navigate, useNavigate } from 'react-router-dom'
+import { Outlet, Navigate } from 'react-router-dom' // useNavigate
 
 /** configs */
 import { paths } from '@/config/paths'
-import { CircleTick, Cross } from '@/icons'
+// import { CircleTick, Cross } from '@/icons'
 
 /** stores */
 import { useAuthStore } from '@/store/authStore'
 
 /** components */
 import { Sidebar } from '@/components/main/Sidebar'
-import erp from '/erp.png'
-import hr from '/hr.png'
-import cms from '/cms.png'
-import inventory from '/inventory.png'
-import { useEffect, useState } from 'react'
+// import erp from '/erp.png'
+// import hr from '/hr.png'
+// import cms from '/cms.png'
+// import inventory from '/inventory.png'
+import { useEffect } from 'react' // useState
 
 export const AdminLayout = () => {
-  const navigate = useNavigate()
-  const [isOpen, setIsOpen] = useState(true)
-  const [appTypes] = useState(localStorage.getItem('apptype'))
+  // const navigate = useNavigate()
+  // const [isOpen, setIsOpen] = useState(true)
+  // const [appTypes] = useState(localStorage.getItem('apptype'))
 
   /** hooks */
   const { isAuthenticated, isUsername } = useAuthStore()
@@ -33,12 +33,12 @@ export const AdminLayout = () => {
     localStorage.setItem('apptype', 'hr')
   }, [])
 
-  const handleClosePop = (value: string) => {
-    if (value === 'hr') {
-      navigate(`/${isUsername}/${paths.onboard}`)
-    }
-    setIsOpen(false)
-  }
+  // const handleClosePop = (value: string) => {
+  //   if (value === 'hr') {
+  //     navigate(`/${isUsername}/${paths.onboard}`)
+  //   }
+  //   setIsOpen(false)
+  // }
 
   return (
     <div className="app_admin_wrapper">
@@ -47,7 +47,7 @@ export const AdminLayout = () => {
         <Outlet />
       </div>
       <div className="app_right_side_bar">sfkjhkjsf</div>
-      {isOpen && (
+      {/* {isOpen && (
         <div className="app_main_popup">
           <span onClick={() => setIsOpen(false)}>
             <Cross />
@@ -93,7 +93,7 @@ export const AdminLayout = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   )
 }
