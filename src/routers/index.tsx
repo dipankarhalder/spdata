@@ -13,17 +13,22 @@ import { ForgotPage } from '@/pages/auth/ForgotPage'
 import { DashboardPage } from '@/pages/main/DashboardPage'
 import { ReportsPage } from '@/pages/main/ReportsPage'
 
+// Internals
+import { CompanyPage } from '@/pages/main/Internals/Company'
+import { CompanyListPage } from '@/pages/main/Internals/Company/ListPage'
+
+// Resources
 import { OnboardProcessPage } from '@/pages/main/Resources/OnboardProcess'
 import { MembersPage } from '@/pages/main/Resources/Members'
 import { MembersListPage } from '@/pages/main/Resources/Members/ListPage'
-
 import { SalaryPage } from '@/pages/main/Resources/Salaries'
 import { SalaryListPage } from '@/pages/main/Resources/Salaries/ListPage'
 import { AttendancePage } from '@/pages/main/Resources/Attendance'
 import { AttendanceListPage } from '@/pages/main/Resources/Attendance/ListPage'
 
-import { VendorsPage } from '@/pages/main/Vendors'
-import { VendorListPage } from '@/pages/main/Vendors/ListPage'
+// Products
+import { VendorsPage } from '@/pages/main/Erp/Vendors'
+import { VendorListPage } from '@/pages/main/Erp/Vendors/ListPage'
 
 /** routes path */
 const routes = createBrowserRouter([
@@ -45,6 +50,11 @@ const routes = createBrowserRouter([
     children: [
       { index: true, element: <DashboardPage /> },
       { path: paths.reports, element: <ReportsPage /> },
+      {
+        path: paths.company,
+        element: <CompanyPage />,
+        children: [{ index: true, element: <CompanyListPage /> }],
+      },
       {
         path: paths.onboard,
         element: <OnboardProcessPage />,

@@ -205,3 +205,15 @@
     }
   }
 }
+
+.app_main_content_wrapping {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

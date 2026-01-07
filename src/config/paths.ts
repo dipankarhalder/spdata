@@ -8,6 +8,7 @@ export const paths = {
   admin: '/:username',
   reports: 'reports',
   vendors: 'vendors',
+  company: 'companies',
   onboard: 'resource-onboard',
   members: 'members-list',
   salaries: 'members-salary',
